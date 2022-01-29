@@ -1,0 +1,240 @@
+#section1{
+    height: 45rem;
+}
+
+#section1 h1{
+    float: left;
+    color: rgb(40, 182, 158);
+    font-size: 60pt;
+    width: 50%;
+    text-align: left;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    font-family: 'righteous';
+}
+
+#section1 h2{
+    float: left;
+    color: rgb(40, 182, 158);
+    font-size: 30pt;
+    width: 50%;
+    text-align: left;
+    padding-left: 1.5rem;
+    font-family: 'audiowide-regular';
+}
+
+.img-section1{
+    padding-top: 1rem;
+}
+
+#section2{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 6rem;
+}
+
+#section2 .grid-section2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#section2 .grid-section2 .item{
+    display: block;
+    width: 80%;
+    padding: 0rem 1rem;
+    margin: 1rem;
+    margin-bottom: 5rem;
+    border-left: 4px solid rgba(177, 223, 215, 0.842);
+}
+
+#section2 .grid-section2 .item span{
+    color: rgb(41, 134, 119);
+    font-size: 40pt;
+}
+
+#section2 .grid-section2 .item h2{
+    color: rgb(40, 182, 158);
+    font-size: 20pt;
+}
+
+#section2 .grid-section2 .item p{
+    color: rgb(79, 107, 102);
+}
+
+#section3, #section4, #section5{
+    padding-bottom: 8rem;
+    padding-top: 4rem;
+    display: grid;
+}
+
+#section3{
+    background-color: rgba(11, 99, 90, 0.842);
+}
+
+#section4{
+    background-color: rgb(255, 255, 255);
+}
+
+#section5{
+    background-color: rgba(11, 99, 90, 0.842);
+}
+
+#section3 h2, #section5 h2{
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+    color: #fff;
+    font-family: 'righteous';
+    font-size: 25pt;
+}
+
+#section4 h2{
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+    color: rgb(40, 182, 158);
+    font-family: 'righteous';
+    font-size: 25pt;
+}
+
+#section3 .link-redirect, #section5 .link-redirect{
+    margin-top: 4rem;
+    background-color: rgb(40, 182, 158);
+    padding: 1rem 2rem;
+    color: #fff;
+    font-size: 14pt;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+#section4 .link-redirect{
+    margin-top: 4rem;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    color: rgb(40, 182, 158);
+    border: 2px solid rgb(40, 182, 158);
+    font-size: 14pt;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+#section4 .link-redirect:hover{
+    background-color: rgb(221, 252, 247);
+}
+
+#section3 .link-redirect:hover, #section5 .link-redirect:hover{
+    background-color: rgb(61, 199, 176);
+}
+
+#section3 .grid-section3, #section4 .grid-section4, #section5 .grid-section5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#section3 .grid-section3 figure img, #section4 .grid-section4 figure img, #section5 .grid-section5 figure img{
+    background-color: #fff;
+    border: 8px solid #fff;
+    border-radius: 6px;
+}
+
+#section3 .grid-section3 .label, #section4 .grid-section4 .label, #section5 .grid-section5 .label{
+    margin: 0px;
+}
+
+#section3 .grid-section3 .label .item, #section4 .grid-section4 .label .item, #section5 .grid-section5 .label .item{
+    padding: 1rem 0rem 1rem 1rem;
+    width: 80%;
+    margin: 1rem auto 0rem auto;
+    background-color: #fff;
+    border-radius: 10px;
+    color: rgb(79, 107, 102);
+}
+
+
+#section4 .grid-section4 .label .border{
+    border: 2px solid rgb(40, 182, 158);
+}
+
+#section6{
+    margin: 4rem 0rem;
+}
+
+#section6 h2, #section6 h3{
+    padding-left: 2rem;
+    color: rgb(40, 182, 158);
+}
+
+#section6 fieldset{
+    border: none;
+    padding: 0rem 2rem;
+}
+
+#section6 label{
+    color: rgb(79, 107, 102);
+}
+
+#section6 input:focus{
+    outline: none;
+    border: 2px solid rgb(40, 182, 158);
+}
+
+#section6 input{
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0rem;
+    border: 1px solid rgb(40, 182, 158);
+    border-radius: 50px;
+}
+
+#section6 button{
+    color: #fff;
+    background-color: rgb(40, 182, 158);
+    padding: 0.5rem 2rem;
+    border-radius: 15px;
+    border: none;
+    font-size: 12pt;
+    font-family: 'Righteous';
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#section6 button:hover{
+    background-color: rgb(61, 199, 176);
+}
+
+
+@media screen and (max-width: 1500px) {
+    .img-section1{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #section2 .grid-section2{
+        grid-template-columns: 1fr 1fr;
+    }
+    #section3 .grid-section3 figure img, #section4 .grid-section4 figure img, #section5 .grid-section5 figure img{
+        width: 85%;
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .img-section1{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #section2 .grid-section2{
+        grid-template-columns: 1fr;
+    }
+    #section3 .grid-section3, #section4 .grid-section4, #section5 .grid-section5{
+        grid-template-columns: 1fr;
+    }
+    #section1 h1{
+        font-size: 40pt;
+    }
+    #section1 h2{
+        font-size: 25pt;
+    }
+}
