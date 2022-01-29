@@ -222,7 +222,9 @@
     .img-section1{
         display: none;
     }
-}
+    #section3 h2, #section5 h2, #section4 h2{
+        padding-left: 1.5rem;
+    }
 
 @media screen and (max-width: 800px) {
     #section2 .grid-section2{
