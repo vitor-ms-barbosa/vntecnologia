@@ -61,25 +61,23 @@
     color: rgb(79, 107, 102);
 }
 
-#section3, #section4, #section5{
+#section3, #section4, #section5, #section6, #section7{
     padding-bottom: 8rem;
     padding-top: 4rem;
     display: grid;
 }
 
-#section3{
+#section3, #section5, #section7{
     background-color: rgba(11, 99, 90, 0.842);
 }
 
-#section4{
+#section4, #section6{
     background-color: rgb(255, 255, 255);
 }
 
-#section5{
-    background-color: rgba(11, 99, 90, 0.842);
-}
-
-#section3 h2, #section5 h2{
+#section3 h2, 
+#section5 h2,
+#section7 h2{
     padding-left: 3rem;
     padding-bottom: 2rem;
     color: #fff;
@@ -87,7 +85,8 @@
     font-size: 25pt;
 }
 
-#section4 h2{
+#section4 h2,
+#section6 h2{
     padding-left: 3rem;
     padding-bottom: 2rem;
     color: rgb(40, 182, 158);
@@ -95,7 +94,9 @@
     font-size: 25pt;
 }
 
-#section3 .link-redirect, #section5 .link-redirect{
+#section3 .link-redirect, 
+#section5 .link-redirect,
+#section7 .link-redirect{
     margin-top: 4rem;
     background-color: rgb(40, 182, 158);
     padding: 1rem 2rem;
@@ -106,7 +107,8 @@
     transition: 0.5s;
 }
 
-#section4 .link-redirect{
+#section4 .link-redirect,
+#section6 .link-redirect{
     margin-top: 4rem;
     background-color: rgb(255, 255, 255);
     padding: 1rem 2rem;
@@ -118,30 +120,49 @@
     transition: 0.5s;
 }
 
-#section4 .link-redirect:hover{
+#section4 .link-redirect:hover,
+#section6 .link-redirect:hover{
     background-color: rgb(221, 252, 247);
 }
 
-#section3 .link-redirect:hover, #section5 .link-redirect:hover{
+#section3 .link-redirect:hover, 
+#section5 .link-redirect:hover,
+#section7 .link-redirect:hover{
     background-color: rgb(61, 199, 176);
 }
 
-#section3 .grid-section3, #section4 .grid-section4, #section5 .grid-section5{
+#section3 .grid-section3, 
+#section4 .grid-section4, 
+#section5 .grid-section5,
+#section6 .grid-section6,
+#section7 .grid-section7{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-#section3 .grid-section3 figure img, #section4 .grid-section4 figure img, #section5 .grid-section5 figure img{
+#section3 .grid-section3 figure img, 
+#section4 .grid-section4 figure img, 
+#section5 .grid-section5 figure img,
+#section6 .grid-section6 figure img,
+#section7 .grid-section7 figure img{
     background-color: #fff;
     border: 8px solid #fff;
     border-radius: 6px;
 }
 
-#section3 .grid-section3 .label, #section4 .grid-section4 .label, #section5 .grid-section5 .label{
+#section3 .grid-section3 .label, 
+#section4 .grid-section4 .label, 
+#section5 .grid-section5 .label,
+#section6 .grid-section6 .label,
+#section7 .grid-section7 .label{
     margin: 0px;
 }
 
-#section3 .grid-section3 .label .item, #section4 .grid-section4 .label .item, #section5 .grid-section5 .label .item{
+#section3 .grid-section3 .label .item, 
+#section4 .grid-section4 .label .item, 
+#section5 .grid-section5 .label .item,
+#section6 .grid-section6 .label .item,
+#section7 .grid-section7 .label .item{
     padding: 1rem 0rem 1rem 1rem;
     width: 80%;
     margin: 1rem auto 0rem auto;
@@ -151,41 +172,79 @@
 }
 
 
-#section4 .grid-section4 .label .border{
+#section4 .grid-section4 .label .border,
+#section6 .grid-section6 .label .border{
     border: 2px solid rgb(40, 182, 158);
 }
 
-#section6{
+
+#section8{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+}
+
+#section8 .grid-section8{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#section8 .grid-section8 .item{
+    display: block;
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 5rem;
+    border: 1px solid rgba(177, 223, 215, 0.842);
+    border-radius: 10px;
+}
+
+#section8 .grid-section8 .item span{
+    color: rgb(41, 134, 119);
+    font-size: 40pt;
+}
+
+#section8 .grid-section8 .item h2{
+    color: rgb(40, 182, 158);
+    font-size: 20pt;
+}
+
+#section8 .grid-section8 .item p{
+    color: rgb(79, 107, 102);
+}
+
+#section9{
     margin: 4rem 0rem;
 }
 
-#section6 h2, #section6 h3{
+#section9 h2, #section9 h3{
     padding-left: 2rem;
     color: rgb(40, 182, 158);
 }
 
-#section6 fieldset{
+#section9 fieldset{
     border: none;
     padding: 0rem 2rem;
 }
 
-#section6 label{
+#section9 label{
     color: rgb(79, 107, 102);
 }
 
-#section6 input:focus{
+#section9 input:focus{
     outline: none;
     border: 2px solid rgb(40, 182, 158);
 }
 
-#section6 input{
+#section9 input{
     padding: 0.5rem 1rem;
     margin: 0.5rem 0rem;
     border: 1px solid rgb(40, 182, 158);
     border-radius: 50px;
 }
 
-#section6 button{
+#section9 button{
     color: #fff;
     background-color: rgb(40, 182, 158);
     padding: 0.5rem 2rem;
@@ -197,7 +256,7 @@
     transition: 0.5s;
 }
 
-#section6 button:hover{
+#section9 button:hover{
     background-color: rgb(61, 199, 176);
 }
 
@@ -209,10 +268,15 @@
 }
 
 @media screen and (max-width: 1200px) {
-    #section2 .grid-section2{
+    #section2 .grid-section2,
+    #section8 .grid-section8{
         grid-template-columns: 1fr 1fr;
     }
-    #section3 .grid-section3 figure img, #section4 .grid-section4 figure img, #section5 .grid-section5 figure img{
+    #section3 .grid-section3 figure img, 
+    #section4 .grid-section4 figure img, 
+    #section5 .grid-section5 figure img,
+    #section6 .grid-section6 figure img,
+    #section7 .grid-section7 figure img{
         width: 85%;
         margin: 1rem;
     }
@@ -222,15 +286,22 @@
     .img-section1{
         display: none;
     }
-    #section3 h2, #section5 h2, #section4 h2{
+    #section3 h2, #section5 h2, #section4 h2, #section6 h2, #section7 h2{
         padding-left: 1.5rem;
     }
 
+}
+
 @media screen and (max-width: 800px) {
-    #section2 .grid-section2{
+    #section2 .grid-section2,
+    #section8 .grid-section8{
         grid-template-columns: 1fr;
     }
-    #section3 .grid-section3, #section4 .grid-section4, #section5 .grid-section5{
+    #section3 .grid-section3, 
+    #section4 .grid-section4, 
+    #section5 .grid-section5,
+    #section6 .grid-section6,
+    #section7 .grid-section7{
         grid-template-columns: 1fr;
     }
     #section1 h1{
