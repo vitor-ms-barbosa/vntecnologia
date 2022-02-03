@@ -1,8 +1,8 @@
-#section1{
+#section0{
     height: 45rem;
 }
 
-#section1 h1{
+#section0 h1{
     float: left;
     color: rgb(40, 182, 158);
     font-size: 60pt;
@@ -13,7 +13,7 @@
     font-family: 'righteous';
 }
 
-#section1 h2{
+#section0 h2{
     float: left;
     color: rgb(40, 182, 158);
     font-size: 30pt;
@@ -23,22 +23,22 @@
     font-family: 'audiowide-regular';
 }
 
-.img-section1{
+.img-section0{
     padding-top: 1rem;
 }
 
-#section2{
+#section1{
     width: 100%;
     display: inline-block;
     margin-bottom: 6rem;
 }
 
-#section2 .grid-section2{
+#section1 .grid-section1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-#section2 .grid-section2 .item{
+#section1 .grid-section1 .item{
     display: block;
     width: 80%;
     padding: 0rem 1rem;
@@ -47,21 +47,21 @@
     border-left: 4px solid rgba(177, 223, 215, 0.842);
 }
 
-#section2 .grid-section2 .item span{
+#section1 .grid-section1 .item span{
     color: rgb(41, 134, 119);
     font-size: 40pt;
 }
 
-#section2 .grid-section2 .item h2{
+#section1 .grid-section1 .item h2{
     color: rgb(40, 182, 158);
     font-size: 20pt;
 }
 
-#section2 .grid-section2 .item p{
+#section1 .grid-section1 .item p{
     color: rgb(79, 107, 102);
 }
 
-#section3, #section4, #section5, #section6, #section7{
+#section2, #section3, #section4, #section5, #section6, #section7{
     padding-bottom: 8rem;
     padding-top: 4rem;
     display: grid;
@@ -71,7 +71,7 @@
     background-color: rgba(11, 99, 90, 0.842);
 }
 
-#section4, #section6{
+#section2, #section4, #section6{
     background-color: rgb(255, 255, 255);
 }
 
@@ -85,6 +85,7 @@
     font-size: 25pt;
 }
 
+#section2 h2,
 #section4 h2,
 #section6 h2{
     padding-left: 3rem;
@@ -107,6 +108,7 @@
     transition: 0.5s;
 }
 
+#section2 .link-redirect,
 #section4 .link-redirect,
 #section6 .link-redirect{
     margin-top: 4rem;
@@ -120,6 +122,7 @@
     transition: 0.5s;
 }
 
+#section2 .link-redirect:hover,
 #section4 .link-redirect:hover,
 #section6 .link-redirect:hover{
     background-color: rgb(221, 252, 247);
@@ -131,6 +134,7 @@
     background-color: rgb(61, 199, 176);
 }
 
+#section2 .grid-section2,
 #section3 .grid-section3, 
 #section4 .grid-section4, 
 #section5 .grid-section5,
@@ -140,6 +144,7 @@
     grid-template-columns: 1fr 1fr;
 }
 
+#section2 .grid-section2 figure img,
 #section3 .grid-section3 figure img, 
 #section4 .grid-section4 figure img, 
 #section5 .grid-section5 figure img,
@@ -150,6 +155,7 @@
     border-radius: 6px;
 }
 
+#section2 .grid-section2 .label,
 #section3 .grid-section3 .label, 
 #section4 .grid-section4 .label, 
 #section5 .grid-section5 .label,
@@ -158,6 +164,7 @@
     margin: 0px;
 }
 
+#section2 .grid-section2 .label .item,
 #section3 .grid-section3 .label .item, 
 #section4 .grid-section4 .label .item, 
 #section5 .grid-section5 .label .item,
@@ -171,7 +178,7 @@
     color: rgb(79, 107, 102);
 }
 
-
+#section2 .grid-section2 .label .border,
 #section4 .grid-section4 .label .border,
 #section6 .grid-section6 .label .border{
     border: 2px solid rgb(40, 182, 158);
@@ -215,6 +222,9 @@
 }
 
 #section9{
+    background-image: url('../img/sections/form-idx.png');
+    background-repeat: no-repeat;
+    background-position: right center;
     margin: 4rem 0rem;
 }
 
@@ -262,16 +272,17 @@
 
 
 @media screen and (max-width: 1500px) {
-    .img-section1{
+    .img-section0{
         width: 90%;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    #section2 .grid-section2,
+    #section1 .grid-section1,
     #section8 .grid-section8{
         grid-template-columns: 1fr 1fr;
     }
+    #section2 .grid-section2 figure img,
     #section3 .grid-section3 figure img, 
     #section4 .grid-section4 figure img, 
     #section5 .grid-section5 figure img,
@@ -283,20 +294,21 @@
 }
 
 @media screen and (max-width: 1050px) {
-    .img-section1{
+    .img-section0{
         display: none;
     }
-    #section3 h2, #section5 h2, #section4 h2, #section6 h2, #section7 h2{
+    #section2 h2, #section3 h2, #section5 h2, #section4 h2, #section6 h2, #section7 h2{
         padding-left: 1.5rem;
     }
 
 }
 
 @media screen and (max-width: 800px) {
-    #section2 .grid-section2,
+    #section1 .grid-section1,
     #section8 .grid-section8{
         grid-template-columns: 1fr;
     }
+    #section2 .grid-section2,
     #section3 .grid-section3, 
     #section4 .grid-section4, 
     #section5 .grid-section5,
@@ -304,10 +316,13 @@
     #section7 .grid-section7{
         grid-template-columns: 1fr;
     }
-    #section1 h1{
+    #section0 h1{
         font-size: 40pt;
     }
-    #section1 h2{
+    #section0 h2{
         font-size: 25pt;
+    }
+    #section9{
+        background-image: none;
     }
 }
