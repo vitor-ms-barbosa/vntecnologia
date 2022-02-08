@@ -32,4 +32,7 @@ function loadPage() {
 
     document.getElementById('tel-footer').innerHTML = '<span class="material-icons">phone</span><a href="tel:+5577998246192">+55 (XX) X.XXXX-XXXX</a>';
     // Telefone disposto em todas as páginas
+
+    document.getElementById('copyyear').innerHTML = '2021 - ' + new Date().getFullYear();
+    // Data do copyright da página
 }
